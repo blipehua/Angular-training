@@ -1,0 +1,23 @@
+<div>
+    <h1 [style.color]="'blue'">Pipes</h1>
+    <h2>{{name | uppercase}}</h2>
+    <h2>{{name | lowercase}}</h2>
+    <h2>{{name | titlecase}}</h2>
+    <h2>{{surname | slice:3:5}}</h2>
+    <h2>{{info | json}}</h2>
+
+    <!--formatting-->
+    <p>{{5.689 | number: '1.2-3'}}</p>
+    <p>{{5.689 | number: '3.4-5'}}</p>
+    <p>{{5.689 | number: '3.1-2'}}</p>
+
+    <p>{{0.25 | percent}}</p>
+    <p>{{0.25 | currency}}</p>
+    <p>{{200.25 | currency:'EUR':"symbol":'3.2-2'}}</p>
+    <p>{{ date }}</p>
+    <p>{{date | date: 'short'}}</p>
+    <p>{{date | date: 'shortDate'}}</p>
+    <p>{{date | date: 'shortTime'}}</p>
+
+</div>
+

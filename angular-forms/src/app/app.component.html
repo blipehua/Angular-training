@@ -1,0 +1,97 @@
+<main>
+  <h1>Frontend Bootcamp by NTT DATA</h1>
+  <div class="container-fluid">
+    <h2>Registration</h2>
+    <form #userForm="ngForm">
+      <div class="mb-3 mt-5 has-validation">
+        <label for="nameId" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nameId"
+          aria-describedby="nameHelp"
+          name="name"
+          #name="ngModel"
+          [class.is-invalid]="name.invalid"
+          [(ngModel)]="userModel.name"
+          required
+        />
+      </div>
+      <!-- Tracking state and validity -->
+      <!--{{name.untouched}}-->
+      <!-- {{name.pristine}} -->
+      <!-- {{name.valid}} -->
+      <div class="mb-3">
+        <label for="surnameId" class="form-label">Surname</label>
+        <input
+          type="text"
+          class="form-control"
+          id="surnameId"
+          aria-describedby="surnameHelp"
+          name="surname"
+          [(ngModel)]="userModel.surname"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="emailId" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="emailId"
+          aria-describedby="emailHelp"
+          name="email"
+          [(ngModel)]="userModel.email"
+        />
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="phoneId" class="form-label">Phone</label>
+        <input
+          type="text"
+          class="form-control"
+          id="phoneId"
+          aria-describedby="phoneHelp"
+          name="phone"
+          [(ngModel)]="userModel.phone"
+        />
+        <div id="phoneHelp" class="form-text">Example: 999 666 999</div>
+      </div>
+      <div class="mb-3">
+        <label for="selectId" class="form-label"
+          >Select the course that you want to take</label
+        >
+        <select id="selectId" class="form-select" name="topic" [(ngModel)]="userModel.topic">
+          <option *ngFor="let topic of topics">{{ topic }}</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="mb-2">Time preference</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="timePreference" id="timePreference1" value="morning" [(ngModel)]="userModel.timePreference">
+          <label class="form-check-label" for="timePreference1">
+            Morning (9AM - 12PM)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="timePreference" id="timePreference2" value="evening" [(ngModel)]="userModel.timePreference">
+          <label class="form-check-label" for="timePreference2">
+            Evening (6PM - 10PM)
+          </label>
+        </div>
+      </div>
+      <div class="mb-3 mt-2">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="promotion" name="subscribe" [(ngModel)]="userModel.subscribe"/>
+          <label class="form-check-label" for="promotion">
+            Send me promotional offers and preferences.
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</main>

@@ -1,0 +1,13 @@
+<h1>
+    Employee List
+  </h1>
+  <ul class="items">
+    <!-- <li *ngFor="let employee of employees" [class.selected]="isSelected(department)" (click)="onSelect(department)">
+      <span class="badge">{{department.id}}</span> {{department.name}}
+    </li> -->
+    <li *ngFor="let employee of employees">
+        <span class="badge">{{employee.id}}</span>
+        <span>{{employee.name}}</span>
+        <span [style.background-color] = "'#9bd48b'" [style.margin-left]="'5px'">{{employee.age}}</span>
+    </li>
+</ul>
