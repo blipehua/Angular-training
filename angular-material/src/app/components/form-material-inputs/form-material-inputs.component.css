@@ -1,0 +1,30 @@
+/* .containerInput {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+} */
+mat-grid-list {
+    padding: 1%;
+}
+
+mat-grid-tile {
+    padding: 1%;
+}
+
+mat-grid-tile div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.mat-mdc-form-field {
+  width: 100%;
+  margin: 1%;
+}
+
+.mat-50 {
+  width: 48%;
+  margin: 1%;
+}
