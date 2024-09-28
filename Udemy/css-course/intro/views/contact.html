@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <h1>Menu</h1>
+    <ul>
+        <li><a href="../index.html" title="Inicio">Inicio</a></li>
+        <li><a href="content.html" title="Contenido">Contenido</a></li>
+        <li><a href="contact.html" title="Contacto">Contacto</a></li>
+    </ul>
+    <hr/>
+    <h2>Contáctame</h2>
+    <form>
+        <p>
+            <label for="nombre">Nombre:</label>
+            <br>
+            <input type="text" name="nombre" maxlength="200" />
+        </p>
+        <p>
+            <label for="apellidos">Apellidos:</label>
+            <br>
+            <input type="text" name="apellidos" maxlength="200" />
+        </p>
+        <p>
+            <label for="email">Correo Electrónico:</label>
+            <br>
+            <input type="email" name="email" placeholder="example@myemail.com"/>
+        </p>
+        <p>
+            <label for="edad">Edad:</label>
+            <select name="edad">
+                <option value="18">Adulto</option>
+                <option value="17">Menor de edad</option>
+            </select>
+        </p>
+        <button
+            type="submit"
+            name="enviar"
+            >
+            Enviar mensaje
+        </button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,127 @@
+/* importar font desde google font */
+@font-face {
+  font-family: InterFamilyCustomFont;
+  src: url(fonts/Inter/static/Inter_24pt-Regular.ttf);
+}
+
+@font-face {
+  font-family: FascinateFontCustom;
+  src: url(fonts/Fascinate_Inline/FascinateInline-Regular.ttf);
+}
+
+/* selector universal */
+* {
+  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+
+  font-family: InterFamilyCustomFont;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* selectores de etiqueta */
+body {
+  background-color: rgb(230, 185, 71);
+  background-image: url("../assets/imgs/pattern1.jpg");
+  background-attachment: fixed;
+}
+
+h1 {
+  color: maroon;
+  text-decoration: underline;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: brown;
+  font-family: FascinateFontCustom, "Times New Roman";
+}
+
+h3 {
+  background-color: black;
+}
+
+a {
+  font-size: 16px;
+  color: green;
+}
+
+footer a {
+  color: teal;
+}
+
+button {
+  margin: 3px;
+  /* colores */
+  /* colores del sistema */
+}
+
+/* selectores Id */
+#description,
+#titulo {
+  border: 1px solid sienna;
+  padding: 0.5rem;
+  text-align: justify;
+  line-height: 20px;
+  vertical-align: auto;
+}
+
+#titulo {
+  border: 2px dashed white;
+  text-align: center;
+}
+
+/* selectores de clase */
+.parrafo,
+.parrafo2 {
+  font-style: italic;
+  text-shadow: 2px 2px gainsboro;
+  font-weight: 200;
+}
+
+.parrafo2 {
+  text-shadow: 2px 2px yellow;
+}
+
+/* selectores atributo */
+#usuario form {
+  border: 5px solid darkcyan;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#usuario form * {
+  display: block;
+}
+
+input[type="text"] {
+  padding: 5px;
+  background-color: bisque;
+}
+
+input[type="tel"] {
+  padding: 10px;
+  background-color: burlywood;
+}
+
+/* selector hijo */
+#menu > li > a {
+  font-size: 18px;
+  color: rgb(146, 12, 12);
+  text-decoration: double;
+}
+
+/* prioridad */
+h3 {
+  background-color: chocolate !important;
+}
+
+/* display styles */
+#caja1,
+#caja2 {
+  width: 250px;
+  height: 250px;
+  background-color: orange;
+  border: 3px solid purple;
+  margin: 10px;
+}

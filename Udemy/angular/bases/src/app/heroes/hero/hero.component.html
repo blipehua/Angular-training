@@ -1,0 +1,31 @@
+<h1>{{name}}</h1>
+
+<dl>
+    <td>Nombre: </td>
+    <dd>{{name}}</dd>
+    <td>Edad</td>
+    <td>{{age}}</td>
+    <td>Método</td>
+    <dd>{{getHeroDescription()}}</dd>
+    <td>Capitalizado</td>
+    <dd>{{capitalizedName}}</dd>
+</dl>
+
+<div class="container mt-2 mb-2">
+    <input 
+        value="{{inputName}}"
+        name="{{inputName}}"
+        type="text"
+    />
+</div>
+{{inputName}}
+<button
+    
+    class="btn btn-primary mx-2" 
+    (click)="setName()">
+    Cambiar nombre
+</button>
+
+<button class="btn btn-primary">
+    Cambiar edad
+</button>
